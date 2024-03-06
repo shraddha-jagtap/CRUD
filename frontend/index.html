@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD - MongoDB</title>
+</head>
+<body>
+    <h1>Welcome Master</h1>
+    <pre><strong>Simple CRUD</strong>
+        <strong>C</strong> - <u>C</u>reate
+        <Strong>R</Strong> - <u>R</u>ead
+        <strong>U</strong> - <u>U</u>pdate
+        <strong>D</strong> - <u>D</u>elete
+    </pre>
+
+    <hr>
+    <Section id="create">
+        <h3>Create</h3>
+        <form action="/api/insert" method="post">
+            <input type="text" name="name" id="name" placeholder="name" value="sdv">
+            <input type="text" name="value" id="value" placeholder="value" value="sdf">
+            <input type="submit" value="Send Value">
+        </form>
+    </Section>
+
+    <hr>
+    <section id="read">
+        <h3>Read</h3>
+        <form action="/api/read" method="post">
+            <input type="text" name="name" id="name" placeholder="name" value="sdv">
+            <input type="submit" value="Send Value">
+        </form>
+    </section>
+    <hr>
+    <Section id="update">
+        <h3>Update</h3>
+        <form action="/api/update" method="post">
+            <input type="text" name="name" id="name" placeholder="name" value="sdv">
+            <input type="text" name="value" id="value" placeholder="value" value="sdf">
+            <input type="submit" value="Send Value">
+        </form>
+    </Section>    
+    <hr>
+    <section id="delete">
+        <h3>Delete</h3>
+        <form action="/api/delete" method="post">
+            <input type="text" name="name" id="name" placeholder="name" value="sdv">
+            <input type="submit" value="Send Value">
+        </form>
+    </section>
+    <hr>
+</body>
+</html>
