@@ -78,11 +78,13 @@ async function updateData(data) {
     try {
         const updatedData = await Data.findOneAndUpdate({ name: data.name, value: data.value}, {value: data.newvalue}, { new: true });
         console.log('Data updated:', updatedData);
-        return updatedData;
+        
     } catch (error) {
         console.error('Error updating data:', error);
         throw error;
     }
+
+    return;
 }
 
 async function deleteData(body,cb) {

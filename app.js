@@ -31,14 +31,14 @@ app.post('/api/read',(req, res) => {
 // })
 
 app.post('/api/update',(req, res) => {
-    db.updateData(req.body);
+    db.updateData(req.body)
+    res.send("Updated success");
 })
 
 app.post('/api/delete',(req, res) => {
     db.deleteData(req.body,(message)=>{
         res.send(message)
-    })
-    ;
+    });
 })
 
 app.listen(2333, ()=>{
