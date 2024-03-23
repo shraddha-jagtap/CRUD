@@ -22,36 +22,6 @@ function insertData(insertRow){
     return "Data Added To Database";
 }
 
-
-// function readData(name){
-//     let message='';
-//     var newMessage;
-//     async function read(name){
-
-//     const Data = mongoose.model('Data', dataSchema,'testColl');
-    
-//     await Data.find({name: name})
-//     .then(data => {
-//         // console.log('Data read: ', data);
-//        data.forEach(row => {
-//         console.log("+"+message + "+");
-//             message += `${row.name} is ${row.value}\n`;
-//              newMessage = message
-
-//         });
-//         return message;
-//     })
-//     .catch(error => {
-//         console.error('Error reading data: ', error);
-//         throw error;
-//     });
-//     return message;
-//     }
-//     console.log(88);
-//     console.log("/"+message+"/");
-//     return read(name);
-// }
-
 async function readData(name,callback){
     let message = '';
     let value;

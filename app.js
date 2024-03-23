@@ -26,10 +26,6 @@ app.post('/api/read',(req, res) => {
     });
 })
 
-// app.post('/api/read',(req, res) => {
-//     res.send(db.readData(req.body.name));
-// })
-
 app.post('/api/update',(req, res) => {
     db.updateData(req.body)
     res.send("Updated success");
